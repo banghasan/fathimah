@@ -20,11 +20,12 @@ Dimaintenance oleh: [@hasanudinhs](https://telegram.me/hasanudinhs)
 
 ---
 
-- API poin: `http://api.fathimah.ga`
-- Dokumentasi: http://doc.fathimah.ga
-- Web: http://www.fathimah.ga
-- [Fathimah Wiki](https://github.com/banghasan/fathimah/wiki)
+![Fathimah Help](https://cloud.githubusercontent.com/assets/5436959/17323212/82a80244-58cb-11e6-878f-ef7960aa7bc6.JPG)
 
---- 
+![Fathimah Quran](https://cloud.githubusercontent.com/assets/5436959/17323213/82e1c7ae-58cb-11e6-8d78-7b58fac46324.JPG)
+
+
 - [Fathimah Bot](https://telegram.me/fathimahbot)
+- [Fathimah Web](http://www.fathimah.ga)
+- [Fathimah Wiki](https://github.com/banghasan/fathimah/wiki)
 - [Diskusi BOT PHP](https://telegram.me/botphp)
