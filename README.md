@@ -11,7 +11,7 @@ Inilah opensource nya **fathimah**.
 [![GitHub stars](https://img.shields.io/github/stars/banghasan/fathimah.svg?style=plastic)](https://github.com/banghasan/fathimah/stargazers)
 ![command line](https://img.shields.io/badge/command-line-lightgrey.svg?style=plastic)
 ![language php](https://img.shields.io/badge/language-php-red.svg?style=plastic)
-![language php](https://img.shields.io/badge/version-development-yellow.svg?style=plastic)
+![versi dev](https://img.shields.io/badge/version-development-yellow.svg?style=plastic)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/banghasan/fathimah/master/LICENSE)
 
 
@@ -30,10 +30,10 @@ Kali ini di _open_ baik source code maupun API nya.
 Dimaintenance oleh: [@hasanudinhs](https://telegram.me/hasanudinhs)
 
 ---
-
-![Fathimah Help](https://cloud.githubusercontent.com/assets/5436959/17323212/82a80244-58cb-11e6-878f-ef7960aa7bc6.JPG)
-
-![Fathimah Quran](https://cloud.githubusercontent.com/assets/5436959/17323213/82e1c7ae-58cb-11e6-8d78-7b58fac46324.JPG)
+![install](https://cloud.githubusercontent.com/assets/5436959/17783915/7f81cdd0-65a4-11e6-8d2f-4e9b3ec280c6.jpg)
+![start-help](https://cloud.githubusercontent.com/assets/5436959/17783917/7f8c3e46-65a4-11e6-99de-e2cc14f43d49.png)
+![help0](https://cloud.githubusercontent.com/assets/5436959/17783916/7f83a678-65a4-11e6-8f34-416b9f1dc3cb.png)
+![quran ayat sample](https://cloud.githubusercontent.com/assets/5436959/17783918/7f8e3188-65a4-11e6-9af9-4bd706bfb6d3.png)
 
 
 Installasi :
@@ -43,8 +43,3 @@ Installasi :
 Menjalankan metode poll:
 
     php poll.php
-
-- [Fathimah Bot](https://telegram.me/fathimahbot)
-- [Fathimah Web](http://www.fathimah.ga)
-- [Fathimah Wiki](https://github.com/banghasan/fathimah/wiki)
-- [Diskusi BOT PHP](https://telegram.me/botphp)
