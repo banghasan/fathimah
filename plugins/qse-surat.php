@@ -1,4 +1,5 @@
 <?php
 
-if (! defined('HS')) 
-  die('Tidak boleh diakses langsung.');
+if (!defined('HS')) {
+    die('Tidak boleh diakses langsung.');
+}

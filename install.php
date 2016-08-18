@@ -1,47 +1,48 @@
 <?php
+
 define('HS', true);
 
-date_default_timezone_set("ASIA/Jakarta");
+date_default_timezone_set('ASIA/Jakarta');
 include 'konstanta.php';
 
-echo 
-"
+echo
+'
 =========================
 * Bot Installer
-* ".PROGRAMNAME."
+* '.PROGRAMNAME.'
 -------------------------
 * oleh: Hasanudin HS
 * email: banghasan@gmail.com 
 * telegram dan twitter: @hasanudinhs
 * grup telegram: @botphp
 -------------------------
-* Release: Versi ".PROGRAMVER."
-* Tanggal: ".PROGRAMUP."
-* Website: ".PROGRAMURL."
+* Release: Versi '.PROGRAMVER.'
+* Tanggal: '.PROGRAMUP.'
+* Website: '.PROGRAMURL.'
 =========================
 
-";
+';
 
 
-echo "Ingin melanjutkan proses installasi (Ya/Tidak/Kosong BATAL)? ";
+echo 'Ingin melanjutkan proses installasi (Ya/Tidak/Kosong BATAL)? ';
 
-$handle = fopen ("php://stdin","r");
+$handle = fopen('php://stdin', 'r');
 $line = fgets($handle);
-if( strtolower(trim($line)) != 'ya'){
-    echo "- Proses installasi dibatalkan!".PHP_EOL.PHP_EOL;
-    echo "Terimakasih.".PHP_EOL;
+if (strtolower(trim($line)) != 'ya') {
+    echo '- Proses installasi dibatalkan!'.PHP_EOL.PHP_EOL;
+    echo 'Terimakasih.'.PHP_EOL;
     exit;
 }
 
 
 
-$myfile = fopen("data/setting.php", "w") or die("Gagal membuat file!".PHP_EOL."Pastikan direktori /data dapat ditulisi.");
+$myfile = fopen('data/setting.php', 'w') or die('Gagal membuat file!'.PHP_EOL.'Pastikan direktori /data dapat ditulisi.');
 
-echo "Masukkan token bot: "; $line = fgets($handle);
-echo "
+echo 'Masukkan token bot: '; $line = fgets($handle);
+echo '
 ------------------------
 + Proses...
-";
+';
 
 $TOKEN = trim($line);
 
@@ -56,44 +57,44 @@ require_once 'teks/bahasa.php';
 
 $txt .= "\n\$token=\"$TOKEN\";\n\n";
 
-$method	= "getMe";
-$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
+$method = 'getMe';
+$url = 'https://api.telegram.org/bot'.$TOKEN.'/'.$method;
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $datas = curl_exec($ch);
-print curl_error($ch);
+echo curl_error($ch);
 $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-echo "________________________".PHP_EOL;
+echo '________________________'.PHP_EOL;
 if ($status != 200) {
-	echo "Token ERROR!";
+    echo 'Token ERROR!';
 } else {
-	$data = json_decode($datas);
+    $data = json_decode($datas);
 
-	$txt  .= "\n\$bot['name']  		= '".$data->result->first_name."';";
-	$txt  .= "\n\$bot['username']  	= '@".$data->result->username."';";
-	$txt  .= "\n\$bot['logtime']  	= '".date('Y-m-d H:i:s')."';";
-	
-	echo "Nama Bot: ".$data->result->first_name.PHP_EOL;
-	echo "Nama Bot: ".$data->result->username.PHP_EOL;
+    $txt  .= "\n\$bot['name']  		= '".$data->result->first_name."';";
+    $txt  .= "\n\$bot['username']  	= '@".$data->result->username."';";
+    $txt  .= "\n\$bot['logtime']  	= '".date('Y-m-d H:i:s')."';";
+
+    echo 'Nama Bot: '.$data->result->first_name.PHP_EOL;
+    echo 'Nama Bot: '.$data->result->username.PHP_EOL;
 }
-echo "________________________".PHP_EOL;
+echo '________________________'.PHP_EOL;
 
-echo "+ set plugins dan variabel...";
+echo '+ set plugins dan variabel...';
 
-$txt .= <<<EOT
-\$bot['token']		= \$token;
-\$bot['debug']		= false;
+$txt .= <<<'EOT'
+$bot['token']		= $token;
+$bot['debug']		= false;
 
-\$bot['admin']['name']		= 'bangHasan';
-\$bot['admin']['username']	= '@hasanudinhs';
-\$bot['admin']['id']		=  '213567634';	
+$bot['admin']['name']		= 'bangHasan';
+$bot['admin']['username']	= '@hasanudinhs';
+$bot['admin']['id']		=  '213567634';	
 
-\$bot['plugins']['aktif'] = [
+$bot['plugins']['aktif'] = [
 	'qse-surat',
 	'qse-ayat',
 	'qse-note',
@@ -107,7 +108,7 @@ $txt .= <<<EOT
 
 
 # Jika ingin di hook ke non https ubah di sini
-\$bot['API_URL'] = "https://api.telegram.org/bot\$bot[token]/";
+$bot['API_URL'] = "https://api.telegram.org/bot$bot[token]/";
 
 # penyesuaian waktu server
 date_default_timezone_set("ASIA/Jakarta");
@@ -119,8 +120,8 @@ fwrite($myfile, $txt);
 fclose($handle);
 fclose($myfile);
 
- 
-echo "
+
+echo '
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 file data/setting.php telah dibentuk.
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -129,5 +130,4 @@ untuk menjalankan: php poll.php
 webhook: URL/hook.php
 
 --- install selesai... ---
-";
-?>
+';
