@@ -5,6 +5,6 @@ if (! defined('HS'))
 
 # versi fathimah
 define("PROGRAMNAME", "Fathimah Engine");
-define("PROGRAMVER", "0.0.2a");
+define("PROGRAMVER", "0.0.3a");
 define("PROGRAMUP", "19 Agustus 2016");
 define("PROGRAMURL", "www.fathimah.ga");
