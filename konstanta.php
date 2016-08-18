@@ -1,10 +1,11 @@
 <?php
 
-if (! defined('HS')) 
-	die('Tidak boleh diakses langsung.');
+if (!defined('HS')) {
+    die('Tidak boleh diakses langsung.');
+}
 
-# versi fathimah
-define("PROGRAMNAME", "Fathimah Engine");
-define("PROGRAMVER", "0.0.3a");
-define("PROGRAMUP", "19 Agustus 2016");
-define("PROGRAMURL", "www.fathimah.ga");
+// versi fathimah
+define('PROGRAMNAME', 'Fathimah Engine');
+define('PROGRAMVER', '0.0.3a');
+define('PROGRAMUP', '19 Agustus 2016');
+define('PROGRAMURL', 'www.fathimah.ga');
