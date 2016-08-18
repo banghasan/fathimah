@@ -10,8 +10,6 @@ Inilah opensource nya **fathimah**.
 [![GitHub forks](https://img.shields.io/github/forks/banghasan/fathimah.svg?style=plastic)](https://github.com/banghasan/fathimah/network)
 [![GitHub stars](https://img.shields.io/github/stars/banghasan/fathimah.svg?style=plastic)](https://github.com/banghasan/fathimah/stargazers)
 ![command line](https://img.shields.io/badge/command-line-lightgrey.svg?style=plastic)
-![language php](https://img.shields.io/badge/language-php-red.svg?style=plastic)
-![versi dev](https://img.shields.io/badge/version-development-yellow.svg?style=plastic)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/banghasan/fathimah/master/LICENSE)
 
 
@@ -25,12 +23,11 @@ Diantaranya :
 * Sertifikasi Halal MUI
 * dan lain-lainnya
 
-Kali ini di _open_ baik source code maupun API nya.
+Kali ini di _open_ source code engine nya.
 
-Dimaintenance oleh: [@hasanudinhs](https://telegram.me/hasanudinhs)
 
 ---
-![install](https://cloud.githubusercontent.com/assets/5436959/17783915/7f81cdd0-65a4-11e6-8d2f-4e9b3ec280c6.jpg)
+
 ![start-help](https://cloud.githubusercontent.com/assets/5436959/17783917/7f8c3e46-65a4-11e6-99de-e2cc14f43d49.png)
 ![help0](https://cloud.githubusercontent.com/assets/5436959/17783916/7f83a678-65a4-11e6-8f34-416b9f1dc3cb.png)
 ![quran ayat sample](https://cloud.githubusercontent.com/assets/5436959/17783918/7f8e3188-65a4-11e6-9af9-4bd706bfb6d3.png)
@@ -43,3 +40,5 @@ Installasi :
 Menjalankan metode poll:
 
     php poll.php
+
+![install](https://cloud.githubusercontent.com/assets/5436959/17783915/7f81cdd0-65a4-11e6-8d2f-4e9b3ec280c6.jpg)
