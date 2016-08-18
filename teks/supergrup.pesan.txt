@@ -1,0 +1,18 @@
+
+{
+    "message_id": 38097,
+    "from": {
+        "id": 127136528,
+        "first_name": "Deddy",
+        "last_name": "Sandi",
+        "username": "Abu_Asadulloh"
+    },
+    "chat": {
+        "id": -1001042181779,
+        "title": "O-Sahabat Obrolan Sahabat",
+        "username": "selasar",
+        "type": "supergroup"
+    },
+    "date": 1470847060,
+    "text": "Dan bisa di combine dgn inlinebot 😃"
+}

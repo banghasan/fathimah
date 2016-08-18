@@ -1,0 +1,39 @@
+Array
+(
+    [update_id] => 793608833
+    [message] => Array
+        (
+            [message_id] => 38062
+            [from] => Array
+                (
+                    [id] => 189099821
+                    [first_name] => covata
+                    [username] => covatas
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001042181779
+                    [title] => [O-Sahabat] Obrolan Sahabat
+                    [username] => selasar
+                    [type] => supergroup
+                )
+
+            [date] => 1470844725
+            [left_chat_participant] => Array
+                (
+                    [id] => 189099821
+                    [first_name] => covata
+                    [username] => covatas
+                )
+
+            [left_chat_member] => Array
+                (
+                    [id] => 189099821
+                    [first_name] => covata
+                    [username] => covatas
+                )
+
+        )
+
+)
