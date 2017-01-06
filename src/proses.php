@@ -4,7 +4,6 @@ if (!defined('HS')) {
     die('Tidak boleh diakses langsung.');
 }
 
-
 /*
 if(file_exists('plugins/file.php'))
     include 'plugins/file.php';
@@ -55,8 +54,6 @@ function processMessage($sumber)
         }
     }
     echo PHP_EOL;
-
-
 
     /*if (isset($message["message"])) {
     	$sumber   = $message['message'];

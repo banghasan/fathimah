@@ -4,7 +4,6 @@ if (!defined('HS')) {
     die('Tidak boleh diakses langsung.');
 }
 
-
 function exec_curl_request($handle)
 {
     $response = curl_exec($handle);
@@ -97,7 +96,6 @@ function apiRequestJson($method, $parameters)
     return exec_curl_request($handle);
 }
 
-
 //--- API get update
 function getApiUpdates($last_id = null)
 {
@@ -108,7 +106,6 @@ function getApiUpdates($last_id = null)
   //echo print_r($params, true);
   return apiRequest('getUpdates', $params);
 }
-
 
 // --- API kirim pesan
 function sendApiMessage($chatid, $text, $msg_reply_id = false, $parse_mode = false,
@@ -176,7 +173,6 @@ function getApiChatMember($chatid, $user_id)
     return apiRequest($method, $data);
 }
 
-
 // --- API teruskan pesan
 function forwardApiMessage($chatid, $from_chat_id, $message_id)
 {
@@ -190,7 +186,6 @@ function forwardApiMessage($chatid, $from_chat_id, $message_id)
 
     return apiRequest($method, $data);
 }
-
 
 function sendApiKeyboard($chatid, $text, $keyboard = [], $inline = false)
 {
@@ -212,7 +207,6 @@ function sendApiKeyboard($chatid, $text, $keyboard = [], $inline = false)
 
     return apiRequest($method, $data);
 }
-
 
 function editMessageText($chatid, $message_id, $text, $keyboard = [], $inline = false)
 {

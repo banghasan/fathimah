@@ -58,8 +58,6 @@ if ($lanjut) {
             $text .= "\n`$data[contoh]`";
         }
 
-
-
         $hasil = sendApiMessage($fidchat, $text, $fidpesan, 'Markdown');
 
         if ($bot['debug']) {

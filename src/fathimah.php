@@ -4,7 +4,6 @@ if (!defined('HS')) {
     die('Tidak boleh diakses langsung.');
 }
 
-
 /*
 
 Contoh penggunaan:
@@ -18,7 +17,6 @@ $hasil = fathimah($permintaan);
 
 
 */
-
 
 function fathimah($data, $pre = false)
 {
