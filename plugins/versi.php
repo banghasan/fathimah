@@ -22,7 +22,6 @@ if ($lanjut) {
     if (preg_match($pola, $pesan, $cocok)) {
         echo " -> proses: $pola";
 
-
         $text = '🔬 *'.PROGRAMNAME."*\n⛓ Ver.".PROGRAMVER."\n⏳ ".PROGRAMUP;
 
         $permintaan = [

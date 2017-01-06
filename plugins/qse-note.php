@@ -48,7 +48,6 @@ if ($lanjut) {
             $text = BAHASA_ERROR_REMOTE_TIDAK_DIKETAHUI;
         }
 
-
         $hasil = sendApiMessage($fidchat, $text, $fidpesan, 'Markdown', true);
 
         if ($bot['debug']) {
@@ -56,7 +55,6 @@ if ($lanjut) {
         }
 
         //print_r($datas);
-
 
     //berakhir di sini setiap plugins
         $lanjut = false;

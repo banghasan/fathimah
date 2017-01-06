@@ -4,7 +4,6 @@ if (!defined('HS')) {
     die('Tidak boleh diakses langsung.');
 }
 
-
 $keterangan[] = [
     'nama'   => 'QSE Ayat',
     'oleh'   => '@hasanudinhs',
@@ -24,7 +23,6 @@ $keterangan[] = [
     'contoh' => "!quran 2 100\n!quran 2:100,200 id\n!quran 2 100-102 ar,en",
 
 ];
-
 
 // dimulai di sini setiap plugins
 if ($lanjut) {
@@ -124,7 +122,6 @@ if ($lanjut) {
         } else {
             $text = '🚫 '.BAHASA_ERROR_REMOTE_TIDAK_DIKETAHUI;
         }
-
 
         $hasil = sendApiMessage($fidchat, $text, $fidpesan, 'Markdown', true);
 

@@ -17,9 +17,7 @@ function printApiUpdates($result)
     return $last_id;
 }
 
-
 echo PROGRAMNAME.' '.PROGRAMVER.PHP_EOL.BAHASA_BARIS.BAHASA_SUKSES_POLL.date('Y-m-d H:i:s').PHP_EOL;
-
 
 $last_id = null;
 while (true) {

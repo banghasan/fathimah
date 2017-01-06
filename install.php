@@ -23,7 +23,6 @@ echo
 
 ';
 
-
 echo 'Ingin melanjutkan proses installasi (Ya/Tidak/Kosong BATAL)? ';
 
 $handle = fopen('php://stdin', 'r');
@@ -33,8 +32,6 @@ if (strtolower(trim($line)) != 'ya') {
     echo 'Terimakasih.'.PHP_EOL;
     exit;
 }
-
-
 
 $myfile = fopen('data/setting.php', 'w') or die('Gagal membuat file!'.PHP_EOL.'Pastikan direktori /data dapat ditulisi.');
 
@@ -75,9 +72,9 @@ if ($status != 200) {
 } else {
     $data = json_decode($datas);
 
-    $txt  .= "\n\$bot['name']  		= '".$data->result->first_name."';";
-    $txt  .= "\n\$bot['username']  	= '@".$data->result->username."';";
-    $txt  .= "\n\$bot['logtime']  	= '".date('Y-m-d H:i:s')."';";
+    $txt .= "\n\$bot['name']  		= '".$data->result->first_name."';";
+    $txt .= "\n\$bot['username']  	= '@".$data->result->username."';";
+    $txt .= "\n\$bot['logtime']  	= '".date('Y-m-d H:i:s')."';";
 
     echo 'Nama Bot: '.$data->result->first_name.PHP_EOL;
     echo 'Nama Bot: '.$data->result->username.PHP_EOL;
@@ -119,7 +116,6 @@ fwrite($myfile, $txt);
 
 fclose($handle);
 fclose($myfile);
-
 
 echo '
 ~~~~~~~~~~~~~~~~~~~~~~~~~
